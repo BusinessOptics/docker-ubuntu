@@ -29,9 +29,9 @@ RUN apt-get -y install --no-install-recommends \
     python2.7 \
     python2.7-dev \
     python-distribute \
-    python-pip \
-    python-setuptools
+    python-pip
 # Use latest packages from pip rather than ubuntu
+RUN rm -f /usr/lib/python2.7/dist-packages/setuptools.egg-info
 RUN pip install -U pip
 RUN pip install -U distribute
 RUN pip install -U setuptools
