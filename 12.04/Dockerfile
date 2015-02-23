@@ -10,7 +10,7 @@ RUN \
   echo "deb http://ppa.launchpad.net/businessoptics/packages/ubuntu precise main" \
     > /etc/apt/sources.list.d/businessoptics-packages.list && \
   echo "echo deb http://ppa.launchpad.net/chris-lea/node.js/ubuntu precise main" \
-    > /etc/apt/source.list.d/nodejs.list && \
+    > /etc/apt/sources.list.d/nodejs.list && \
   apt-key adv --keyserver keyserver.ubuntu.com --recv-keys \
     0680B3D7 \
     C7917B12
