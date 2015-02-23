@@ -5,11 +5,11 @@ MAINTAINER Jason Brownbridge <jason@businessoptics.biz>
 # Install our custom ppa (0680B3D7)
 # Install chris lea's ppa for nodejs (C7917B12)
 RUN \
-  echo "deb http://archive.ubuntu.com/ubuntu/ $(lsb_release -sc) main universe" \
+  echo "deb http://archive.ubuntu.com/ubuntu/ precise main universe" \
     > /etc/apt/sources.list.d/universe.list && \
-  echo "deb http://ppa.launchpad.net/businessoptics/packages/ubuntu $(lsb_release -sc) main" \
+  echo "deb http://ppa.launchpad.net/businessoptics/packages/ubuntu precise main" \
     > /etc/apt/sources.list.d/businessoptics-packages.list && \
-  echo "echo deb http://ppa.launchpad.net/chris-lea/node.js/ubuntu $(lsb_release -sc) main" \
+  echo "echo deb http://ppa.launchpad.net/chris-lea/node.js/ubuntu precise main" \
     > /etc/apt/source.list.d/nodejs.list && \
   apt-key adv --keyserver keyserver.ubuntu.com --recv-keys \
     0680B3D7 \
