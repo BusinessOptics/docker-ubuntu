@@ -29,7 +29,9 @@ RUN apt-get -y install --no-install-recommends \
     python2.7 \
     python2.7-dev \
     python-distribute \
-    python-pip 
+    python-pip \
+    python-setuptools
 # Use latest packages from pip rather than ubuntu
 RUN pip install -U pip
 RUN pip install -U distribute
+RUN pip install -U setuptools
