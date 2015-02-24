@@ -13,6 +13,7 @@ RUN \
 RUN apt-get -y install --no-install-recommends \
   apt-transport-https \
   ca-certificates \
+  python-software-properties \
   software-properties-common
 # Install custom ppas
 RUN \
