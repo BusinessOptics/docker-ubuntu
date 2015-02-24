@@ -41,4 +41,4 @@ RUN pip install -U pip
 RUN pip install -U distribute
 RUN pip install -U setuptools
 # Remove apt lists
-RUN rm -Rf rm -rf /var/lib/apt/lists/*
+RUN rm -Rf /var/lib/apt/lists/*
